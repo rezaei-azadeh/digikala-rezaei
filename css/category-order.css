@@ -1,0 +1,49 @@
+.category-order {
+  max-width: 1440px;
+  width: 100%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+
+.sw{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+
+}
+
+  .swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: block;
+
+  }
+
+
+  .category-order-title {
+    text-align: center;
+  }
+  .category-order-content {
+    .category-item-top {
+      margin-bottom: 30px;
+
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.74);
+      font-size: 12px;
+    }
+  }
+}

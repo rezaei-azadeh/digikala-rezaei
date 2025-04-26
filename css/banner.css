@@ -1,0 +1,17 @@
+.banner{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 25px auto;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+
+.banner-item{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+}

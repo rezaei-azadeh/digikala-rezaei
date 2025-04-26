@@ -1,0 +1,96 @@
+@font-face {
+  font-family: yekan;
+  src: url(../fonts/IRANYekanWeb.eot), url(../fonts/IRANYekanWeb.ttf),
+    url(../fonts/IRANYekanWeb.woff), url(../fonts/IRANYekanWeb.woff2);
+}
+:root {
+  --font-family: yekan;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  /* unicode-bidi: bidi-override;
+  font-feature-settings: "lnum" 1; */
+}
+body {
+  /* padding-bottom: 500px; */
+}
+.content {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 50px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  background-color: #ffffff !important;
+}
+.swiper-button-next:after {
+  font-size: 12px !important;
+  font-weight: bold;
+  color: #7a7e85;
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0000;
+  visibility: hidden;
+  pointer-events: none;
+}
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff !important;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+.swiper-button-prev:after {
+  font-size: 12px !important;
+  font-weight: bold;
+  color: #7a7e85;
+}
+.more-link {
+  text-decoration: none;
+  font-size: 15px;
+  color: #19bfd3;
+  font-weight: 800;
+}
+.Percentage {
+  background-color: #db304e;
+  color: white;
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 0px 6px;
+  border-radius: 50px;
+}
+.price-final {
+  &::before {
+    content: " ";
+    padding: 10px;
+    background-image: url(../images/offer/تومان.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+.real-price {
+  color: lightgrey;
+  text-decoration: line-through;
+  display: block;
+}

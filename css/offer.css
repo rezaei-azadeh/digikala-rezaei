@@ -1,0 +1,148 @@
+.offer-section {
+  background-color: #db304e;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
+  border-radius: 16px;
+  .swiper-slide {
+    height: auto;
+    &:not(:first-child) {
+      background-color: white;
+    }
+    &:nth-child(2) {
+      border-radius: 0px 8px 8px 0px;
+    }
+    &:last-child {
+      border-radius: 8px 0px 0px 8px;
+    }
+  }
+  .offerswiper {
+    padding-left: 25px;
+  }
+
+
+  .offer-item-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .offer-item-timer-center {
+      display: flex;
+      gap: 5px;
+      color: white;
+      div {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-color: white;
+        padding: 2px;
+        border-radius: 5px;
+        color: black;
+      }
+    }
+    .offer-item-timer-btn {
+      button {
+        border: none;
+        padding: 5px 10px;
+        background-color: transparent;
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: 800;
+        }
+        &::after {
+          content: "›";
+          color: white;
+          font-size: 27px;
+          position: relative;
+          left: -10px;
+          bottom: -5px;
+        }
+      }
+    }
+  }
+  .offer-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-family: "yekan";
+    img {
+      width: 132px;
+      height: 132px;
+    }
+    .offer-item-description {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      .offer-item-description-title {
+        font-weight: 800;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+        a {
+          text-decoration: none;
+          font-size: 12px;
+          color: lightslategray;
+        }
+      }
+      .offer-item-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 13px;
+        .offer-item-price-Percentage {
+          background-color: #db304e;
+          color: white;
+          font-size: 13.5px;
+          font-weight: 800;
+          padding: 0px 6px;
+          border-radius: 50px;
+          &::after {
+            content: "%";
+          }
+        }
+        .offer-item-price-text {
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+
+    .offer-item-price-realprice {
+      display: block;
+      width: 100%;
+      text-align: left;
+      color: lightgray;
+      span {
+        text-decoration: line-through;
+      }
+    }
+  }
+  .offer-section-more {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img {
+      border: 3px solid #19bfd3;
+      padding: 20px;
+      border-radius: 50%;
+    }
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.664);
+      font-weight: 800;
+    }
+  }
+}

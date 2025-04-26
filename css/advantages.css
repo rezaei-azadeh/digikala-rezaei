@@ -1,0 +1,33 @@
+.Advantages {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+
+  .Advantages-item {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 10px;
+      img {
+        width: 52px;
+        height: 52px;
+      }
+      span {
+        word-wrap: break-word;
+      }
+    }
+  }
+  .Advantages-item:last-child {
+  }
+}
